@@ -1,0 +1,5 @@
+curl -i -X POST \
+  --url http://localhost:8001/apis/  \
+  --data 'name=getty' \
+  --data 'upstream_url=https://api.gettyimages.com/v3/search/images' \
+  --data 'request_host=api.gettyimages.com'
