@@ -12,7 +12,7 @@ docker run -d --name kong-database \
               -p 8001:8001 \
               -p 7946:7946 \
               -p 7946:7946/udp \
-              --security-opt seccomp:unconfined \
+              -v /path/to/your/kong/configuration/directory/:/etc/kong/ \
               mashape/kong
 
 
