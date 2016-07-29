@@ -1,3 +1,5 @@
+These are the commands you need to run for setting up the system, besides that you need to download the kong.yml and substiute the path where it is saved after -v command. Leaf the rest after : unchanged.   
+
 docker pull mashape/kong
 
 docker run -d --name kong-database \
@@ -12,13 +14,13 @@ docker run -d --name kong-database \
               -p 8001:8001 \
               -p 7946:7946 \
               -p 7946:7946/udp \
-              -v /path/to/your/kong/configuration/directory/:/etc/kong/ \
+              -v /path/to/your/kong/configuration/directory_where_kong.yml_belongs/:/etc/kong/ \ 
               mashape/kong
 
 
 
 check Kong is running:
 
-$ curl http://127.0.0.1:8001
+curl http://127.0.0.1:8001
 
 
