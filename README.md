@@ -23,11 +23,15 @@ docker run -d --name kong-database \
               mashape/kong
 
 ## Native installtion
-https://getkong.org/install/
+See https://getkong.org/install/
+
 you need to download the kong.yml from this repository.
 
 Start kong with 
 Kong start -c kong.yml 
+
+Stop kong with 
+Kong stop
 
 check Kong is running:
 
