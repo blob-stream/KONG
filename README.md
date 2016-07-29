@@ -1,5 +1,5 @@
 #Kong 
-#the open-source management layer for APIs, delivering high performance and reliability.
+the open-source management layer for APIs, delivering high performance and reliability.
 
 ##Installion in Docker
 
